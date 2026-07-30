@@ -48,7 +48,7 @@ button { font: inherit; }
   color: var(--cream);
   border-bottom: 1px solid rgba(255,255,255,.22);
 }
-.brand { display: flex; align-items: center; }
+.brand { display: flex; align-items: center; gap: 14px; }
 .brand-logo {
   width: 70px;
   height: 70px;
@@ -56,6 +56,14 @@ button { font: inherit; }
   border-radius: 50%;
   border: 1px solid rgba(241, 229, 202, .45);
   box-shadow: 0 4px 18px rgba(0, 0, 0, .12);
+}
+.brand-name {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -.025em;
+  white-space: nowrap;
 }
 .main-nav { display: flex; align-items: center; gap: clamp(20px, 2.8vw, 44px); }
 .main-nav a { font-size: 12px; text-transform: uppercase; letter-spacing: .14em; position: relative; }
@@ -280,7 +288,9 @@ footer p { font-size: 9px; text-transform: uppercase; letter-spacing: .16em; opa
 
 @media (max-width: 650px) {
   .site-header { padding-inline: 18px; }
+  .brand { gap: 10px; }
   .brand-logo { width: 54px; height: 54px; }
+  .brand-name { font-size: 16px; }
   .hero { min-height: 830px; padding: 120px 22px 70px; overflow: hidden; }
   h1 { font-size: clamp(54px, 16.5vw, 75px); }
   .hero-intro { font-size: 16px; }
