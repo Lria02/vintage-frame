@@ -228,7 +228,7 @@ h1 em, h2 em { font-weight: 500; color: var(--gold); }
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 48px 41px;
+  padding: 48px 42px;
   background: linear-gradient(180deg, rgba(81,10,24,.95) 0%, rgba(71,13,30,.98) 100%);
   color: var(--cream);
   border: 1px solid rgba(255,255,255,.18);
